@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "nombre": "Ostrich - Prime Cut",
+    "precio": 51367.16,
+    "stock": 35
+  },
+  {
+    "id": 2,
+    "nombre": "Cheese Cloth",
+    "precio": 53641.58,
+    "stock": 42
+  },
+  {
+    "id": 3,
+    "nombre": "Steam Pan Full Lid",
+    "precio": 55872.15,
+    "stock": 10
+  }
+]
