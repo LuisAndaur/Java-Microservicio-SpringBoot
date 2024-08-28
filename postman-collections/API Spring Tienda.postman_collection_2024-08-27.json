@@ -1,0 +1,161 @@
+{
+	"info": {
+		"_postman_id": "2044bc73-d6c5-494d-813a-1be6c3e6c061",
+		"name": "API Spring Tienda",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "API Clientes",
+			"item": [
+				{
+					"name": "GET Clientes",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}clientes",
+							"host": [
+								"{{URL}}clientes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET Cliente By userName",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}clientes/hhh",
+							"host": [
+								"{{URL}}clientes"
+							],
+							"path": [
+								"hhh"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET Cliente By HTML",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}clientes/html",
+							"host": [
+								"{{URL}}clientes"
+							],
+							"path": [
+								"html"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET Cliente By XML",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}clientes/xml",
+							"host": [
+								"{{URL}}clientes"
+							],
+							"path": [
+								"xml"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST Cliente ALTA",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"jac\",\r\n    \"password\": \"1234\",\r\n    \"nombre\": \"Jackson\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}clientes",
+							"host": [
+								"{{URL}}clientes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PUT Cliente Modificación",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"arm\",\r\n    \"password\": \"4321\",\r\n    \"nombre\": \"Jacobo\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}clientes",
+							"host": [
+								"{{URL}}clientes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE Cliente by UserName",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}clientes/arm",
+							"host": [
+								"{{URL}}clientes"
+							],
+							"path": [
+								"arm"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "API Productos",
+			"item": [
+				{
+					"name": "GET Productos",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}productos",
+							"host": [
+								"{{URL}}productos"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
