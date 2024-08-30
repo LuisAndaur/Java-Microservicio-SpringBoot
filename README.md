@@ -9,8 +9,14 @@
 - **Gestior de proyecto:** Maven
 - **Spring Boot:** 3.3.2
 - **Packaging:** Jar
-- **ORM:** Hibernate
-- **DB:** PostgreSQL
+- **ORM:** Hibernate 6.5.2
+- **DB:** PostgreSQL 16 ( pgadmin4-8.11 )
+
+
+> Librerías.
+
+- **Lombok:** 1.18.34
 
 > Dependencias
-- *Spring Web* 
+- *Spring Web*
+- *Spring Data*

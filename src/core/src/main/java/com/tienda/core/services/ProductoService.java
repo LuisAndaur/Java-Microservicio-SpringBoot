@@ -2,15 +2,17 @@ package com.tienda.core.services;
 
 import com.tienda.core.domain.Producto;
 import com.tienda.core.interfaces.IProductoService;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.context.annotation.Lazy;
-import org.springframework.context.annotation.Primary;
+//import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.List;
 
 @Lazy
+@Slf4j
 @Service("MEMORY")
 @ConditionalOnProperty(
         value = "productos.estrategia",
@@ -19,7 +21,8 @@ import java.util.List;
 public class ProductoService implements IProductoService {
 
     public ProductoService(){
-        System.out.println("Se está construyendo un objeto de la clase ProductoSrvice");
+
+        log.info("Se está construyendo un objeto de la clase ProductoSrvice");
     }
 
     public List<Producto> getProductos(){
